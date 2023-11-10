@@ -5,6 +5,11 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
+@app.route("/orderAhead.html")
+def orderAhead():
+    return render_template("orderAhead.html")
+
+
 #@app.route("/admin")
 #def admin():
 #    return redirect(url_for("home"))
