@@ -195,7 +195,8 @@ body{
 }
 
 .parallax {
-    /*background-image: url('./img/PolyjuicePotion.png');*/
+    /*background-image: url('./img/PolyjuicePotion.png');
+    ^^want to include this but not sure how*/
     height: 500px;
     background-attachment: fixed;
     background-position: center;
