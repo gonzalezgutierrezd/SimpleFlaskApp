@@ -1,10 +1,36 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Home Page</title>
-    </head>
-    <body>
-        <h1>Home Page!</h1>
-        <p>Hello!</p>
-    </body>
-</html>
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+
+        {% block content%}
+        <div class="header">
+            <h1>~CELEBRATING OVER 20 YEARS OF SERVICE~</h1>
+            <h3 class="header-h3">EST. 1997</h3>
+        </div>
+        <div class="body">
+            <div class="body-container">
+                <img class= "body-main-image" src="static/img/entrance or exterior of our shop.jpg" alt="main image">
+                <h1>The Alchemist's Cafe</h1>
+                <h3>Chicago's Trusted Merchant For Potions and Draughts</h3>
+                <hr class="hr-one">
+                <p>Nestled in the heart of Chicago, our cozy shop is an oasis for weary travelers and local merchants. We serve the highest quality potion brews and our specialty is our "Draughts of Soul," referred to by locals as "coffee." These potions are brewed using fresh and fragrant espresso beans, extracted in just the right way to create an opulent and tasty cup of joe. Our signature Alchemist's Flair potions, are tasty renditions of our draughts of soul but with a little added flair on behalf of our chief alchemist. We also sell ingredients so traveling alchemists can take home and brew their own potions.</p>
+                <p>So, stop in, and enjoy one of our brews (potion bottles provided).</p>
+                <img class="counter-img" src="static/img/counter of the coffeeshop.jpg" alt="alchemist hard at work behind the counter">
+                <hr class="hr-two">
+                <div class="image-row">
+                    <div class="left">
+                        <img class="row-left" src="static/img/pic of latte art.png" alt="a latte">
+                    </div>
+                    <div class="right">
+                        <img class="row-right" src="static/img/cool neon coffee cup sign [filler].jpg" alt="filler 1">
+                    </div>
+                </div>
+            </div>
+            <div class="parallax">
+                <div class="parallax-text">
+                    <h2>NOT JUST "COFFEE"</h2>
+                    <hr class="hr-three">
+                    <p>Our alchemists are highly skilled professionals and crafstman, and although we specialize in Draughts of Soul, we also make other types of tinkers and potions. Besides liquid delights we also have fine eatery and delicacies for at home alchemists and travellers.</p>
+                </div>
+            </div>
+        </div>
+        {% endblock%}
