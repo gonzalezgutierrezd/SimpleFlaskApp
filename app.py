@@ -1,5 +1,10 @@
 from flask import Flask, redirect, url_for, render_template
+from flask_sqlalchemy import SQLALchemy
+
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
+
+db = SQLALchemy(app)
 
 @app.route("/")
 def home():
