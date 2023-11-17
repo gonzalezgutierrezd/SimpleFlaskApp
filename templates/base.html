@@ -12,9 +12,9 @@
                 <a href="/"><img class="logo" src="static\img\Alchemist's Cafe LOGO transparent.png" alt="logo"></a>
                 <nav>
                     <ul class="left-navbar">
-                        <li class="active top-nav-item"><a href="/">home</a></li>
-                        <li><a href="#">location</a></li>
-                        <li><a href="./orderAhead.html">Order Ahead</a></li>
+                        <li class="active top-nav-item"><a href="{{ url_for('home') }}">home</a></li>
+                        
+                        <li><a href="{{ url_for('orderAhead') }}">Order Ahead</a></li>
                     </ul>
                 </nav>
                 <div class="social-icons">
