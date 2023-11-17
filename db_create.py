@@ -1,4 +1,4 @@
-from __init__ import app,db
+from __init__ import app, db
 
 class Item(db.Model):
     id = db.Column(db.Integer(), primary_key=True)
@@ -27,4 +27,10 @@ with app.app_context():
     supplies_cat = Category(id=4, name='Supplies')
     other_cat = Category(id=5, name='Other')
     latte_item = Item(id=1, name='Latte', price=5.0, desc='The most simple form of our Draught of Soul. 2 shots of magic bean extract with delicious frothed milk.', category_id=2)
+
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(20), unique=True, nullable=False)
+    email = db.Column(db.String(120), unique=True, nullable=False)
+
   
