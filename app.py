@@ -9,10 +9,10 @@ def home():
     return render_template("index.html")
 
 #change to OurMenu
-@app.route("/orderAhead", methods=['POST', 'GET'])
-def orderAhead():
+@app.route("/our_menu", methods=['POST', 'GET'])
+def our_menu():
     products = db.session.execute(db.select(Item))
-    return render_template('orderAhead.html', products=products)
+    return render_template('our_menu.html', products=products)
 
 
 
