@@ -14,8 +14,5 @@ def our_menu():
     products = db.session.execute(db.select(Item))
     return render_template('our_menu.html', products=products)
 
-
-
-
 if __name__ == "__main__":
     app.run(debug=True)
