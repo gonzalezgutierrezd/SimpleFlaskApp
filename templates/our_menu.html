@@ -17,53 +17,46 @@
                 <div class="food-items">
                     <!-- item -->
                     <div class="food-item Potions">
+                    {% for item in Potions %}
                         <div class="food-img">
                             <img src="static\img\default1.png">
                         </div>
                         <div class="food-content">
-                            <h2 class="food-name"></h2>
-                            <div class="line"></div>
-                            <h3 class="food-price"></h3>
+                            <h2 class="food-name">{{ item.name }}</h2>
+                            <div class="line">{{ item.desc }}</div>
+                            <h3 class="food-price">{{ item.price }}</h3>
                         </div>
+                    {% endfor %}
                     </div>
                     <!-- end of item -->
 
                     <!-- item -->
                     <div class="food-item SpecialtyP">
+                    {% for item in Specialty %}
                         <div class="food-img">
                             <img src="static\img\default2.png">
                         </div>
                         <div class="food-content">
-                            <h2 class="food-name"></h2>
-                            <div class="line"></div>
-                            <h3 class="food-price"></h3>
+                            <h2 class="food-name">{{ item.name }}</h2>
+                            <div class="line">{{ item.desc }}</div>
+                            <h3 class="food-price">{{ item.price }}</h3>
                         </div>
+                    {% endfor %}
                     </div>
                     <!-- end of item -->
 
                     <!-- item -->
                     <div class="food-item Eatery">
+                    {% for item in Food %}
                         <div class="food-img">
                             <img src="static\img\default3.png">
                         </div>
                         <div class="food-content">
-                            <h2 class="food-name"></h2>
-                            <div class="line"></div>
-                            <h3 class="food-price"></h3>
+                            <h2 class="food-name">{{ item.name }}</h2>
+                            <div class="line">{{ item.desc }}</div>
+                            <h3 class="food-price">{{ item.price }}</h3>
                         </div>
-                    </div>
-                    <!-- end of item -->
-
-                    <!-- item -->
-                    <div class="food-item Other">
-                        <div class="food-img">
-                            <img src="static\img\default2.png">
-                        </div>
-                        <div class="food-content">
-                            <h2 class="food-name"></h2>
-                            <div class="line"></div>
-                            <h3 class="food-price"></h3>
-                        </div>
+                    {% endfor %}
                     </div>
                     <!-- end of item -->
                 </div>
