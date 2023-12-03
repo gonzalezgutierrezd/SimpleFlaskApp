@@ -358,7 +358,7 @@ img {
     }
 }
 
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
     .menu-head p {
         width: 50%;
     }
@@ -368,4 +368,4 @@ img {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
     }
-}
+} */
