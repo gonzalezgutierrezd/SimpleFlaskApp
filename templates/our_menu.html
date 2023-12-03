@@ -6,7 +6,7 @@
             <div class="menu-container">
                 <div class="menu-head">
                     <h2>Our Menu</h2>
-                    <p>[add a simple paragraph here]</p>
+                    <p>Our alchemists are highly skilled professionals and crafstman, and although we specialize in Draughts of Soul, we also make other types of tinkers and potions. Ask your barista about our dairy free options. Some drinks are only available iced. Besides liquid delights we also have fine eatery and delicacies for travellers.</p>
                 </div>
                 <div class="menu-btns">
                     <button type="button" class="menu-btn active-btn" id="Potions">Potions</button>
@@ -33,7 +33,7 @@
                     <div class="food-item Specialty">
                     {% for item in Specialty %}
                         <div class="food-img">
-                            <img src="static\img\default2.png">
+                            <img src="static\img\{{ item.image_1 }}">
                         </div>
                         <div class="food-content">
                             <h2 class="food-name">{{ item.name }}</h2>
