@@ -10,13 +10,12 @@ I want to emphasize this is **NOT** a real cafe, but I *would* like to one day o
 
 ## How to Run:
 I have on here the entire directory for my virtual environment that I used throughout my development process for grading purposes, but if you are wanting to reproduce that environment I also have a requirements.txt file that you can use to install all the dependencies for this project directly into your own virtual environment. 
-**NOTE:** this requirements file will *ONLY* work if you are using pip (as opposed to Conda)
-Once you have a virtual environment directory simply make sure you are inside it and use: 
-`pip install -r requirements.txt`
+**NOTE:** this requirements file will *ONLY* work if you are using pip (as opposed to Conda). Once you have a virtual environment directory simply make sure you are inside it and use: 
+`pip install -r requirements.txt` to install all dependencies.
 
 Additionally, make sure you specify the path to that file if it is not in your working directory.
 
-Once you have the dependencies installed you should be able to run the project using `python -m flask run` with no errors! :joy:
+Once you have the dependencies installed you should be able to run the project using `python -m flask run` with no errors! :smile:
 
 ## Things to Note:
 ### Database
