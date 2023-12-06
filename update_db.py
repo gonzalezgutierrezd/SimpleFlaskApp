@@ -6,7 +6,7 @@ with app.app_context():
     treasure.image_1='TreasureClover.png'
     db.session.commit()
 
-# test to see if my git is working properly
+
 
 
 
